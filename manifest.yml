@@ -1,0 +1,13 @@
+applications:
+  .:
+   name: CIDEMO
+   mem: 128M
+   buildpack: https://github.com/ActiveState/stackato-buildpack-python
+   services:
+    airlift-mq:
+      type: rabbitmq3	  
+   stackato:
+    env:
+        QUEUE_NAME: fibq
+    min_version:
+        client: 1.4.3
