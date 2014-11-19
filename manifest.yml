@@ -1,7 +1,7 @@
 applications:
   .:
-   name: CIDEMO
-   mem: 128M
+   name: CIDEMO1
+   mem: 12M
    buildpack: https://github.com/ActiveState/stackato-buildpack-python
    services:
     airlift-mq:
